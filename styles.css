@@ -1,0 +1,1913 @@
+/* ESTILOS GENERALES */
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav{
+    background-color: white;
+    width: 605px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+a{
+    color: #212121;
+    text-decoration: none;
+}
+
+main{
+    background-color: white;
+}
+
+h1{
+    font-weight: 800;
+    font-size: 65px;
+    line-height: 65px;
+    color: #760AFF;
+}
+
+h2{
+    font-size: 25px;
+    margin-bottom: 50px;
+    margin-left: 107px;
+    margin-top: 50px;
+}
+
+h3{
+    font-size: 18px;
+}
+
+h4{
+    font-size:15px;
+    margin-bottom: 25px;
+}
+
+legend{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+input{
+    height: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 10px;
+    border-style: none;
+}
+
+footer{
+    background-color: #212121;
+    color:white;
+    padding-bottom: 5px;
+}
+
+footer a{
+    color: white;
+}
+
+footer > div{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto;
+    grid-template-areas: "RRSS DireccionTel Horarios";
+    justify-content: space-around;
+    justify-items: center;
+    align-content: space-evenly;
+    padding: 54px 30px 54px 30px;
+}
+
+footer img {
+    height: 30px;
+    margin-right: 10px;
+    width: 30px;
+}
+.barraDeNavegacion{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding-left: 73px;
+    padding-right: 73px;
+}
+
+#logo{
+    display: inline-block;
+}
+
+#logo img{
+    width: 47px;
+    height: 47px;
+}
+
+.alineacionIconoTexto{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#horariosDeAtencion{
+    text-align: left;
+}
+
+#copyright{
+    text-align: center;
+}
+
+.iconosRedesSociales{
+    display: inline-block;
+}
+
+.infoFooter{
+    min-width: 320px;
+}
+
+/* INICIO */
+ 
+#heroInicio{
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-image: url("./images/heroinicio.png");
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+#heroContenidoPrincipal{
+    position: absolute;
+    width: 331px;
+    height: 118px;
+    left: 183px;
+    top: 150px;
+}
+
+#heroContenidoPrincipal p{
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #760AFF;
+    margin-top: 26px;
+    margin-bottom: 26px;
+}
+
+.botonPrincipal{
+    background-color: #00C6BA;
+    color: white;
+    height: 42px;
+    width: 254px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#barraContadores{
+    position: absolute;
+    width: 100%;
+    bottom: 0vh;
+    background-color: #760AFF;
+    color:white;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 100px;
+    grid-template-areas: "area1 area2 area3 area4";
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+.contadorVacunas{
+    grid-area: area1;
+}
+
+.contadorCastraciones{
+    grid-area: area2;
+}
+
+.contadorChapitas{
+    grid-area: area3;
+}
+
+.contadorPulgas{
+    grid-area: area4;
+}
+
+.contadorNumero{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.contadorTexto{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.botonesFlotantes img{
+    position: fixed;
+    width: 48px;
+    height: 48px;
+    right:1%;
+    z-index: 1;
+}
+
+#botonScrollTop{
+    top: 81%;
+}
+
+#botonWhatsApp{
+    top: 90%;
+}
+
+#contenedorServicios{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1227px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#contenedorServicios h3{
+    margin-bottom: 27px;
+}
+
+#contenedorServicios div{
+    flex-shrink: 0;
+    width: 230px;
+    height: 180px;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+    line-height: 20px;
+    padding: 34px 32px 23px 32px;
+    box-shadow: 0px 1px 15px rgba(155, 155, 155, 0.2);
+    border-radius: 10px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0px 25px 50px 25px;
+}
+
+#ajustePacientes{
+    margin-top: 0px;
+}
+
+#carruselPacientes{
+    width: 818px;
+    height: 298px;
+    margin-left: auto;
+    margin-right: auto ;
+    margin-bottom: 50px;
+    background-color: #760AFF;
+    border-radius: 10px;
+    display: flex;   
+}
+
+#carruselPacientes div{
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+#carruselPacientes img{
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+}
+
+/* SECCIÓN NOSOTROS */
+
+#heroNosotros{
+    width: 100%;
+    background-image: url("./images/heronosotros.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+
+}
+
+#contenedorCajasVioleta{
+    display: grid;
+    grid-auto-columns: 326px 326px 326px;
+    grid-template-rows: auto;
+    grid-template-areas: "Mision Vision Valores";
+    justify-content:space-evenly;
+}
+
+.cajasVioleta{
+    background-color: #760AFF;
+    padding: 25px 33px 25px 33px;
+    text-align: center;
+    color: white;   
+    top: 60px;
+    position:relative;
+}
+
+.cajasVioleta p{
+    margin-top: 10px;
+    width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+}
+
+.cajasVioleta ul{
+    margin-top: 10px;
+    width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.cajasVioleta li{
+    font-size: 15px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+
+#nosotrosContenidoPrincipal{
+    overflow: auto;
+}
+
+#nosotrosContenidoPrincipal h2{
+    color: white;
+}
+
+#nosotrosContenidoPrincipal p{
+    margin: auto;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    width: 1000px;
+}
+
+#ajusteNosotros{
+    margin-top: 140px;
+}
+
+#contenedorNosotros{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+#contenedorNosotros h3{
+    margin-top: 17px;
+    margin-bottom: 11px;
+}
+
+#contenedorNosotros div{
+    flex-shrink: 0;
+    width: 326px;
+    height: auto;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+    line-height: 20px;
+    box-shadow: 0px 1px 15px rgba(155, 155, 155, 0.2);
+    border-radius: 10px;
+    vertical-align: top;
+    margin-bottom: 50px;
+    padding-bottom: 11px;
+}
+
+#contenedorNosotros img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* SECCIÓN MARCAS */
+
+.sliderMarcas{
+    position: relative;
+    width: 1000px;
+    height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: auto;
+
+}
+
+.sliderImagen{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+
+}
+
+.flechaAnterior{
+    position: absolute;
+    left: 0px;
+    top: 100px;
+}
+
+.flechaSiguiente{
+    position: absolute;
+    right: 0px;
+    top: 100px;
+}
+
+.ajusteSlider{
+    margin-bottom: 50px;
+}
+
+/* SECCIÓN BLOG */
+
+#heroBlog{
+    width: 100%;
+    background-image: url("./images/heroblog.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    overflow: auto;
+}
+
+#heroBlog h2{
+    color: white;
+}
+
+#heroBlog p{
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    width: 1216px;
+}
+
+#contenedorArticulos{
+    display: flex;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1500px;
+
+}
+
+.cajaArticulo{
+    flex-shrink: 0;
+    width: 326px;
+    height: auto;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+    line-height: 20px;
+    box-shadow: 0px 1px 15px rgba(155, 155, 155, 0.2);
+    border-radius: 10px;
+    vertical-align: top;
+    margin: 0px 25px 50px 25px;
+    padding-bottom: 20px;
+}
+
+.cajaArticulo h3{
+    margin-top: 17px;
+    margin-bottom: 16px;
+}
+    
+.cajaArticulo img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.botonLeer{
+    width: 125px;
+    height: 35px;
+    background: #760AFF;
+    border-radius: 10px;
+    padding: 5px 44px 5px 44px;
+    color: white;
+}
+
+.formularioBlog{
+    background-color: #760AFF;
+    color: white;
+    width: 1000px;
+    border-radius: 10px;
+    padding-top: 33px;
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 40px;
+}
+
+.elementosFormulario{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.formularioBlog input{
+    width: 310px;
+}
+
+.botonEnlace{
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    background-color: transparent;
+    border-style: none;
+}
+
+/* SECCIÓN CONTACTO */
+
+#contenedorContacto{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: "formulario mapa";
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: space-around;
+    justify-items: center;
+}
+
+#formularioContacto{
+    width: 450px;
+    background-color: #760AFF;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+#formularioContacto input{
+    width: 100%;
+    margin-bottom: 26px;
+}
+
+#mensajeUsuario{
+    height: 100px;
+}
+
+#formularioContacto div{
+    display: flex;
+    justify-content:end;
+}
+
+#formularioContacto legend{
+    color: white;
+    margin-bottom: 16px;
+}
+
+#cajaMapa{
+    width: 530px;
+    height: 466px;
+    border-radius: 10px;
+    padding-bottom: 50px;
+    background-color: white;
+    box-shadow: 0px 1px 15px rgba(155, 155, 155, 0.2);
+    border-radius: 10px;
+    text-align: center;
+}
+
+#cajaMapa img{
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+}
+
+#cajaMapa div{
+    text-align: center;
+    justify-content: center;
+}
+
+#cajaMapa iframe{
+    margin-bottom: 36px;
+    border-radius: 10px;
+}
+
+/* ARTICULO BLOG */
+
+#heroArticuloBlog{
+    width: 100%;
+    background-image: url("./images/heroarticulo1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    overflow: auto;
+}
+
+#heroArticuloBlog h2{
+    color: white;
+}
+
+#heroArticuloBlog p{
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    width: 1216px;
+    font-weight: 600;
+}
+
+#avatarAutor{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    
+}
+
+#avatarAutor img{
+    height: 50px;
+    width: 50px;
+    justify-items: center;
+    margin-right: 15px;
+}
+
+.parrafoIntroduccion{
+    width: 1171px;
+    margin: auto;
+}
+
+.cuerpoArticulo{
+    width: 1000px;
+    margin-left: 150px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    
+}
+
+.cuerpoArticulo ul{
+    margin-top: 10px;
+    width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    
+}
+
+.cuerpoArticulo li{
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*SMARTPHONE*/ 
+@media only screen and (max-width:449px){
+
+    /* ESTILOS GENERALES */
+
+    h1{
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    h2{
+        font-size: 20px;
+        margin-bottom: 30px;
+        margin-left: 0px;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    h3{
+        font-size: 16px;
+    }
+
+    h4{
+        font-size:14px;
+        margin-bottom: 25px;
+    }
+
+    footer > div{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: "RRSS" "DireccionTel" "Horarios";
+        row-gap: 45px;
+        justify-items: center;
+    }
+
+    legend{
+        font-size: 17px;
+    }
+
+    .barraDeNavegacion{
+        height: 110px;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .barraDeNavegacion ul{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .botonPrincipal{
+        height: 35px;
+        width: 159px;
+        font-size: 16px;
+        order: 4;
+    }
+
+    .botonEnlace{
+        font-size: 16px;
+        order: 3;
+    }
+
+    .infoFooter{
+        min-width: 320px;
+        padding-left: 50px;
+        box-sizing: border-box;
+    }
+
+    .infoFooter span{
+        font-size: 14px;
+    }
+
+    .infoFooter p{
+        font-size: 14px;
+    }
+
+    .botonesFlotantes img{
+        position: fixed;
+        width: 40px;
+        height: 40px;
+        right: 10px;
+        z-index: 1;
+    }
+    
+    #botonWhatsApp{
+        bottom: 20px;
+    }
+
+    #botonScrollTop{
+        display: none;
+    }
+
+    #copyright{
+        font-size: 12px;
+    }
+
+    /* INICIO */
+
+    #heroInicio{
+        width: 100%;
+        height: calc(100vh - 110px);
+        background-image: url("./images/heromobile.png");
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    #heroContenidoPrincipal{
+        width: auto;
+        height: 118px;
+        left: 44px;
+    }
+
+    #heroContenidoPrincipal p{
+        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 26px;
+    }
+
+    #barraContadores{
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 108px 108px;
+        grid-template-areas: "area1 area2"
+        "area3 area4";
+    }
+
+    .contadorVacunas{
+        grid-area: area1;
+    }
+
+    .contadorCastraciones{
+        grid-area: area2;
+    }
+
+    .contadorChapitas{
+        grid-area: area3;
+    }
+
+    .contadorPulgas{
+        grid-area: area4;
+    }
+
+    .contadorTexto{
+        font-size: 14px;
+    }
+
+    #contenedorServicios div{
+        width: 235px;
+        height: 160px;
+        margin-bottom: 30px;
+    }
+
+    #carruselPacientes{
+        width: 300px;
+        height: 510px; 
+        flex-wrap: wrap;
+        align-content: flex-start;
+        margin-bottom: 30px;
+    }
+
+    #carruselPacientes div{
+        margin: 33px 28px 33px 28px;
+    }
+
+    #carruselPacientes img{
+        height: fit-content;
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    /* NOSOTROS */
+
+    #heroNosotros{
+        background-image: url("./images/heronosotrosmobile.png");
+        height: 340px;
+    }
+
+    #nosotrosContenidoPrincipal h2{
+        margin-left: 20px;
+        text-align: start;
+    }
+
+    #nosotrosContenidoPrincipal p{
+        width: auto;
+        text-align: center;
+        font-size: 14px;
+        margin: 0px 30px 0px 30px;
+    }
+
+    #contenedorCajasVioleta{
+        display: grid;
+        grid-auto-columns: 300px;
+        grid-template-rows: auto;
+        grid-template-areas: "Mision" "Vision" "Valores";
+        justify-content:space-evenly;
+        row-gap: 30px;
+        margin-top: -30px;
+    }
+
+    .cajasVioleta p{
+        font-size: 14px;
+        width: 230px;
+    }
+
+    .cajasVioleta li{
+        font-size: 14px;
+    }
+
+    .cajasVioleta ul{
+        width: auto;
+    }
+    
+    #ajusteNosotros{
+        margin-top: 562px;
+    }
+
+    #contenedorNosotros div{
+        width: 300px;
+        margin-bottom: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #contenedorNosotros p{
+        margin-bottom: 10px;
+    }
+
+    /* MARCAS */
+
+    .sliderMarcas{
+        width: auto;
+        height: 100px;
+        margin: 0px 20px 30px 20px;
+    }
+
+    .flechaAnterior{
+        position: absolute;
+        left: 0px;
+        top: 35px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .flechaSiguiente{
+        position: absolute;
+        right: 0px;
+        top: 35px;
+        width: 30px;
+        height: 30px;
+    }
+
+    /* BLOG */
+
+    #heroBlog{
+        background-image: url("./images/heroblogmobile.png");
+    }
+
+    #heroBlog h2{
+        margin-left: 20px;
+        text-align: start;
+    }
+
+    #heroBlog p{
+        width: auto;
+        text-align: center;
+        font-size: 14px;
+        margin: 70px 50px 70px 50px;
+    }
+    
+    .cajaArticulo{
+        width: 300px;
+    }
+    
+    .formularioBlog{
+        width: 300px;
+        box-sizing: border-box;
+    }
+
+    .elementosFormulario{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .formularioBlog input{
+        width: 220px;
+        margin-bottom: 20px;
+    }
+
+    .elementosFormulario > .botonEnlace{
+        margin-left: 0px;
+    }
+
+    /* CONTACTO */
+    
+    #contenedorContacto{
+        grid-template-columns: 100%;
+        grid-template-areas: "formulario" "mapa";
+        margin: 30px 20px 30px 20px;
+    }
+    
+    #formularioContacto{
+        width: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #formularioContacto div {
+        justify-content: space-between;
+    }
+
+    #formularioContacto .botonEnlace{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #cajaMapa {
+        margin-top: 30px;
+        width: 100%;
+        height: 280px;
+    }
+    
+    #cajaMapa img{
+        height: 25px;
+        width: 25px;
+    }
+
+    #cajaMapa span{
+        font-size: 14px;
+    }
+    
+    #cajaMapa iframe{
+        width: 100%;
+        height: 220px;
+    }
+
+    /* ARTÍCULO BLOG */
+
+    #heroArticuloBlog{
+        background-image: url("./images/heroarticulo1mobile.png");
+    }
+    
+    #heroArticuloBlog h2{
+        margin-left: 20px;
+        text-align: start;
+    }
+    
+    #heroArticuloBlog p{
+        width: auto;
+        text-align: center;
+        font-size: 16px;
+        margin: 110px 50px 100px 50px;
+    }
+    
+    #avatarAutor{
+        display: flex;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        margin-left: 30px;
+    }
+    
+    #avatarAutor img{
+        height: 30px;
+        width: 30px;
+    }
+
+    #avatarAutor span{
+        font-size: 14px;
+    }
+    
+    .parrafoIntroduccion{
+        width: auto;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    
+    .cuerpoArticulo{
+        width: auto;
+        margin-left: 60px;
+        margin-right: 60px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .cuerpoArticulo ul{
+        margin-top: 10px;
+        width: 260px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    
+    .cuerpoArticulo li{
+        font-size: 15px;
+        font-weight: 500;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+}
+
+/*Ajuste subtitulo en Smartphone*/
+@media only screen and (max-width:364px){
+    #ajusteNosotros{
+        margin-top: 600px;
+    }
+}
+
+/*TABLET*/ 
+@media only screen and (min-width:450px) and (max-width:768px){
+
+    /* ESTILOS GENERALES */
+
+    h1{
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    h2{
+        font-size: 20px;
+        margin-bottom: 30px;
+        margin-left: 0px;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    h3{
+        font-size: 16px;
+    }
+
+    h4{
+        font-size:14px;
+        margin-bottom: 25px;
+    }
+
+    footer > div{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: "RRSS" "DireccionTel" "Horarios";
+        row-gap: 45px;
+        justify-items: center;
+    }
+
+    legend{
+        font-size: 17px;
+    }
+
+    .barraDeNavegacion{
+        height: 110px;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .barraDeNavegacion ul{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .botonPrincipal{
+        height: 35px;
+        width: 159px;
+        font-size: 16px;
+        order: 4;
+    }
+
+    .botonEnlace{
+        font-size: 16px;
+        order: 3;
+    }
+
+    .infoFooter{
+        min-width: 320px;
+        padding-left: 50px;
+        box-sizing: border-box;
+    }
+
+    .infoFooter span{
+        font-size: 14px;
+    }
+
+    .infoFooter p{
+        font-size: 14px;
+    }
+
+    .botonesFlotantes img{
+        position: fixed;
+        width: 40px;
+        height: 40px;
+        right: 10px;
+        z-index: 1;
+    }
+    
+    #botonWhatsApp{
+        bottom: 20px;
+    }
+
+    #botonScrollTop{
+        display: none;
+    }
+
+    #copyright{
+        font-size: 12px;
+    }
+
+    /* INICIO */
+
+    #heroInicio{
+        width: 100%;
+        height: calc(100vh - 110px);
+        background-image: url("./images/heromobile.png");
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    #heroContenidoPrincipal{
+        width: auto;
+        height: 118px;
+        left: 44px;
+    }
+
+    #heroContenidoPrincipal p{
+        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 26px;
+    }
+
+    #barraContadores{
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 108px 108px;
+        grid-template-areas: "area1 area2"
+        "area3 area4";
+    }
+
+    .contadorVacunas{
+        grid-area: area1;
+    }
+
+    .contadorCastraciones{
+        grid-area: area2;
+    }
+
+    .contadorChapitas{
+        grid-area: area3;
+    }
+
+    .contadorPulgas{
+        grid-area: area4;
+    }
+
+    .contadorTexto{
+        font-size: 14px;
+    }
+
+    #contenedorServicios div{
+        width: 235px;
+        height: 160px;
+        margin-bottom: 30px;
+    }
+
+    #carruselPacientes{
+        width: 300px;
+        height: 510px; 
+        flex-wrap: wrap;
+        align-content: flex-start;
+        margin-bottom: 30px;
+    }
+
+    #carruselPacientes div{
+        margin: 33px 28px 33px 28px;
+    }
+
+    #carruselPacientes img{
+        height: fit-content;
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    /* NOSOTROS */
+
+    #heroNosotros{
+        background-image: url("./images/heronosotrosmobile.png");
+        height: 340px;
+    }
+
+    #nosotrosContenidoPrincipal h2{
+        margin-left: 20px;
+        text-align: start;
+    }
+
+    #nosotrosContenidoPrincipal p{
+        width: auto;
+        text-align: center;
+        font-size: 14px;
+        margin: 0px 30px 0px 30px;
+    }
+  
+    #contenedorCajasVioleta{
+        display: grid;
+        grid-auto-columns: 300px;
+        grid-template-rows: auto;
+        grid-template-areas: "Mision" "Vision" "Valores";
+        justify-content:space-evenly;
+        row-gap: 30px;
+        margin-top: -30px;
+    }
+
+    .cajasVioleta p{
+        font-size: 14px;
+        width: 230px;
+    }
+
+    .cajasVioleta li{
+        font-size: 14px;
+    }
+
+    .cajasVioleta ul{
+        width: auto;
+    }
+   
+    #ajusteNosotros{
+        margin-top: 510px;
+    }
+
+    #contenedorNosotros div{
+        width: 300px;
+        margin-bottom: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #contenedorNosotros p{
+        margin-bottom: 10px;
+    }
+
+    /* MARCAS */
+
+    .sliderMarcas{
+        width: auto;
+        height: 100px;
+        margin: 0px 20px 30px 20px;
+    }
+
+    .flechaAnterior{
+        position: absolute;
+        left: 0px;
+        top: 35px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .flechaSiguiente{
+        position: absolute;
+        right: 0px;
+        top: 35px;
+        width: 30px;
+        height: 30px;
+    }
+
+    /* BLOG */
+    
+    #heroBlog{
+        background-image: url("./images/heroblogmobile.png");
+    }
+
+    #heroBlog h2{
+        margin-left: 20px;
+        text-align: start;
+    }
+
+    #heroBlog p{
+        width: auto;
+        text-align: center;
+        font-size: 14px;
+        margin: 70px 50px 70px 50px;
+    }
+    
+    .cajaArticulo{
+        width: 300px;
+    }
+    
+    .formularioBlog{
+        width: 300px;
+        box-sizing: border-box;
+    }
+
+    .elementosFormulario{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .formularioBlog input{
+        width: 220px;
+        margin-bottom: 20px;
+    }
+
+    .elementosFormulario > .botonEnlace{
+        margin-left: 0px;
+    }
+
+    /* CONTACTO */
+   
+    #contenedorContacto{
+        grid-template-columns: 100%;
+        grid-template-areas: "formulario" "mapa";
+        margin: 30px 20px 30px 20px;
+    }
+    
+    #formularioContacto{
+        width: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #formularioContacto div {
+        justify-content: space-between;
+    }
+
+    #formularioContacto .botonEnlace{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #cajaMapa {
+        margin-top: 30px;
+        width: 100%;
+        height: 280px;
+    }
+    
+    #cajaMapa img{
+        height: 25px;
+        width: 25px;
+    }
+
+    #cajaMapa span{
+        font-size: 14px;
+    }
+    
+    #cajaMapa iframe{
+        width: 100%;
+        height: 220px;
+    }
+
+    /* ARTÍCULO BLOG */
+
+    #heroArticuloBlog{
+        background-image: url("./images/heroarticulo1mobile.png");
+    }
+    
+    #heroArticuloBlog h2{
+        margin-left: 20px;
+        text-align: start;
+    }
+    
+    #heroArticuloBlog p{
+        width: auto;
+        text-align: center;
+        font-size: 16px;
+        margin: 110px 50px 100px 50px;
+    }
+    
+    #avatarAutor{
+        display: flex;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        margin-left: 30px;
+    }
+    
+    #avatarAutor img{
+        height: 30px;
+        width: 30px;
+    }
+
+    #avatarAutor span{
+        font-size: 14px;
+    }
+    
+    .parrafoIntroduccion{
+        width: auto;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    
+    .cuerpoArticulo{
+        width: auto;
+        margin-left: 60px;
+        margin-right: 60px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .cuerpoArticulo ul{
+        margin-top: 10px;
+        width: 260px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    
+    .cuerpoArticulo li{
+        font-size: 15px;
+        font-weight: 500;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+}
+
+/*LAPTOP*/ 
+@media only screen and (min-width:769px) and (max-width:1024px){
+
+    /* ESTILOS GENERALES */
+    h1{
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    h2{
+        font-size: 20px;
+        margin-bottom: 30px;
+        margin-left: 0px;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    h3{
+        font-size: 16px;
+    }
+
+    h4{
+        font-size:14px;
+        margin-bottom: 25px;
+    }
+
+    footer > div{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: auto;
+        grid-template-areas: "RRSS DireccionTel Horarios";
+        justify-content: space-around;
+        justify-items: center;
+        align-content: space-evenly;
+        padding: 54px 30px 54px 30px;
+    }
+
+    legend{
+        font-size: 17px;
+    }
+
+    .barraDeNavegacion{
+        height: 110px;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .barraDeNavegacion ul{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .botonPrincipal{
+        height: 35px;
+        width: 159px;
+        font-size: 16px;
+        order: 4;
+    }
+
+    .botonEnlace{
+        font-size: 16px;
+        order: 3;
+    }
+
+    .infoFooter{
+        min-width: 320px;
+        padding-left: 50px;
+        box-sizing: border-box;
+    }
+
+    .infoFooter span{
+        font-size: 14px;
+    }
+
+    .infoFooter p{
+        font-size: 14px;
+    }
+
+    .botonesFlotantes img{
+        position: fixed;
+        width: 40px;
+        height: 40px;
+        right: 10px;
+        z-index: 1;
+    }
+    
+    #botonWhatsApp{
+        bottom: 20px;
+    }
+
+    #botonScrollTop{
+        display: none;
+    }
+
+    #copyright{
+        font-size: 12px;
+    }
+    /* INICIO */
+   
+    #heroInicio{
+        width: 100%;
+        height: calc(100vh - 110px);
+        background-image: url("./images/heroinicio.png");
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    #heroContenidoPrincipal{
+        width: auto;
+        height: 118px;
+        left: 44px;
+    }
+
+    #heroContenidoPrincipal p{
+        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 26px;
+    }
+
+    #barraContadores{
+        position: absolute;
+        width: 100%;
+        bottom: 0vh;
+        background-color: #760AFF;
+        color:white;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 100px;
+        grid-template-areas: "area1 area2 area3 area4";
+        justify-content: space-around;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .contadorVacunas{
+        grid-area: area1;
+    }
+    
+    .contadorCastraciones{
+        grid-area: area2;
+    }
+    
+    .contadorChapitas{
+        grid-area: area3;
+    }
+    
+    .contadorPulgas{
+        grid-area: area4;
+    }
+
+    .contadorTexto{
+        font-size: 14px;
+    }
+
+    #contenedorServicios div{
+        width: 235px;
+        height: 160px;
+        margin-bottom: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #carruselPacientes{
+        width: 818px;
+        height: 298px;
+        margin-left: auto;
+        margin-right: auto ;
+        margin-bottom: 50px;
+        background-color: #760AFF;
+        border-radius: 10px;
+        display: flex;   
+    }
+    
+    #carruselPacientes div{
+        margin: auto;
+        text-align: center;
+        color: white;
+        font-size: 15px;
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+    
+    #carruselPacientes img{
+        border-top-left-radius: 9px;
+        border-bottom-left-radius: 9px;
+    }
+
+    /* NOSOTROS */
+
+    #heroNosotros{
+        background-image: url("./images/heronosotrosmobile.png");
+        height: 340px;
+    }
+
+    #nosotrosContenidoPrincipal h2{
+        margin-left: 20px;
+        text-align: start;
+    }
+
+    #nosotrosContenidoPrincipal p{
+        width: auto;
+        text-align: center;
+        font-size: 14px;
+        margin: 0px 30px 0px 30px;
+    }
+    
+    #contenedorCajasVioleta{
+        display: grid;
+        grid-auto-columns: 300px;
+        grid-template-rows: auto;
+        grid-template-areas: "Mision" "Vision" "Valores";
+        justify-content:space-evenly;
+        row-gap: 30px;
+        margin-top: -30px;
+    }
+
+    .cajasVioleta p{
+        font-size: 14px;
+        width: 230px;
+    }
+
+    .cajasVioleta li{
+        font-size: 14px;
+    }
+
+    .cajasVioleta ul{
+        width: auto;
+    }
+    
+    #ajusteNosotros{
+        margin-top: 500px;
+    }
+
+    #contenedorNosotros div{
+        width: 300px;
+        margin-bottom: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #contenedorNosotros p{
+        margin-bottom: 10px;
+    }
+
+    /* MARCAS */
+
+    .sliderMarcas{
+        width: auto;
+        height: 100px;
+        margin: 0px 20px 30px 20px;
+    }
+
+    .flechaAnterior{
+        position: absolute;
+        left: 0px;
+        top: 35px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .flechaSiguiente{
+        position: absolute;
+        right: 0px;
+        top: 35px;
+        width: 30px;
+        height: 30px;
+    }
+
+    /* BLOG */
+    
+    #heroBlog{
+        background-image: url("./images/heroblogmobile.png");
+    }
+
+    #heroBlog h2{
+        margin-left: 20px;
+        text-align: start;
+    }
+
+    #heroBlog p{
+        width: auto;
+        text-align: center;
+        font-size: 14px;
+        margin: 70px 50px 70px 50px;
+    }
+    
+    .cajaArticulo{
+        width: 300px;
+    }
+    
+    .formularioBlog{
+        width: 300px;
+        box-sizing: border-box;
+    }
+
+    .elementosFormulario{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .formularioBlog input{
+        width: 220px;
+        margin-bottom: 20px;
+    }
+
+    .elementosFormulario > .botonEnlace{
+        margin-left: 0px;
+    }
+
+    /* CONTACTO */
+    
+    #contenedorContacto{
+        grid-template-columns: 100%;
+        grid-template-areas: "formulario" "mapa";
+        margin: 30px 20px 30px 20px;
+    }
+    
+    #formularioContacto{
+        width: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #formularioContacto div {
+        justify-content: space-between;
+    }
+
+    #formularioContacto .botonEnlace{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #cajaMapa {
+        margin-top: 30px;
+        width: 90%;
+        height: 280px;
+    }
+    
+    #cajaMapa img{
+        height: 25px;
+        width: 25px;
+    }
+
+    #cajaMapa span{
+        font-size: 14px;
+    }
+    
+    #cajaMapa iframe{
+        width: 100%;
+        height: 220px;
+    }
+
+    /* ARTÍCULO BLOG */
+
+    #heroArticuloBlog{
+        background-image: url("./images/heroarticulo1mobile.png");
+    }
+    
+    #heroArticuloBlog h2{
+        margin-left: 20px;
+        text-align: start;
+    }
+    
+    #heroArticuloBlog p{
+        width: auto;
+        text-align: center;
+        font-size: 16px;
+        margin: 110px 50px 100px 50px;
+    }
+    
+    #avatarAutor{
+        display: flex;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        margin-left: 30px;
+    }
+    
+    #avatarAutor img{
+        height: 30px;
+        width: 30px;
+    }
+
+    #avatarAutor span{
+        font-size: 14px;
+    }
+    
+    .parrafoIntroduccion{
+        width: auto;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    
+    .cuerpoArticulo{
+        width: auto;
+        margin-left: 60px;
+        margin-right: 60px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .cuerpoArticulo ul{
+        margin-top: 10px;
+        width: 260px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    
+    .cuerpoArticulo li{
+        font-size: 15px;
+        font-weight: 500;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+}
