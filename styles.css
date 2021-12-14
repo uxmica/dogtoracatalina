@@ -172,6 +172,10 @@ footer img {
     font-weight: 700;
 }
 
+.botonPrincipal:hover{
+    background-color: #05b4a9;
+}
+
 #barraContadores{
     position: absolute;
     width: 100%;
@@ -502,6 +506,10 @@ footer img {
     color: white;
 }
 
+.botonLeer:hover{
+    background-color: #6607e2;
+}
+
 .formularioBlog{
     background-color: #760AFF;
     color: white;
@@ -535,13 +543,14 @@ footer img {
 
 #contenedorContacto{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 40% 40%;
     grid-template-rows: auto;
     grid-template-areas: "formulario mapa";
     margin-top: 50px;
     margin-bottom: 50px;
     justify-content: space-around;
     justify-items: center;
+    column-gap: 50px;
 }
 
 #formularioContacto{
@@ -1910,4 +1919,13 @@ footer img {
         margin-bottom: 10px;
     }
 
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1165px){
+    #contenedorContacto{
+        grid-template-columns: 100%;
+        grid-template-areas: "formulario" "mapa";
+        row-gap: 30px;
+        margin: 30px 20px 30px 20px;
+    }
 }
