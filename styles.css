@@ -1,3 +1,92 @@
+/* Ajustes Bootstrap */
+
+*, ::after, ::before {
+    box-sizing: content-box;
+}
+
+p{
+    margin-bottom: 0;
+}
+
+a:hover {
+    color: white;
+}
+
+input::placeholder{
+    font-size: 16px;
+    padding-left: 16px;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+.nav-link {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: #760AFF;
+    font-weight: 700;
+}
+
+.w-100 {
+    width: 80%!important;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("./images/flechaanterior.png");
+    height: 55px;
+    width: 55px;
+}
+
+.carousel-control-next-icon {
+    background-image: url("./images/flechasiguiente.png");
+    height: 55px;
+    width: 55px;
+}
+
+.carousel-control-prev {
+    left: 37px;
+    opacity: 1;
+}
+
+.carousel-control-next {
+    right: 37px;
+    opacity: 1;
+}
+
+.margenCarrusel{
+    margin-bottom: 50px;
+}
+
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, 
+.navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, 
+.navbar>.container-xxl {
+    background: white;
+    z-index: 10;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("./images/Burger.png");
+}
+
+.navbar-light .navbar-toggler {
+    border-color: white;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.carousel-item {
+    transition: transform .6s ease-in;
+}
+
 /* ESTILOS GENERALES */
 
 *{
@@ -9,6 +98,7 @@
 nav{
     background-color: white;
     width: 605px;
+    box-sizing: border-box;
 }
 
 ul{
@@ -93,8 +183,10 @@ footer img {
     margin-right: 10px;
     width: 30px;
 }
+
 .barraDeNavegacion{
-    height: 80px;
+    height: auto;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -103,7 +195,12 @@ footer img {
     padding-right: 73px;
 }
 
+.navbar-collapse{
+    justify-content: flex-end;
+}
+
 #logo{
+    padding: 24px 0px;
     display: inline-block;
 }
 
@@ -148,7 +245,7 @@ footer img {
     position: absolute;
     width: 331px;
     height: 118px;
-    left: 183px;
+    left: 90px;
     top: 150px;
 }
 
@@ -168,7 +265,7 @@ footer img {
     width: 254px;
     border: none;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
 }
 
@@ -297,7 +394,7 @@ footer img {
 #heroNosotros{
     width: 100%;
     background-image: url("./images/heronosotros.png");
-    background-position: bottom;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 350px;
@@ -335,6 +432,7 @@ footer img {
     margin-left: auto;
     margin-right: auto;
     display: block;
+    padding-left: 0px;
 }
 
 .cajasVioleta li{
@@ -360,7 +458,7 @@ footer img {
     width: 1000px;
 }
 
-#ajusteNosotros{
+#sectionNosotros{
     margin-top: 140px;
 }
 
@@ -456,7 +554,6 @@ footer img {
     text-align: center;
     font-size: 18px;
     color: white;
-    width: 1216px;
 }
 
 #contenedorArticulos{
@@ -468,7 +565,6 @@ footer img {
     flex-wrap: wrap;
     justify-content: center;
     max-width: 1500px;
-
 }
 
 .cajaArticulo{
@@ -532,7 +628,7 @@ footer img {
 }
 
 .botonEnlace{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     color: white;
     background-color: transparent;
@@ -546,15 +642,14 @@ footer img {
     grid-template-columns: 40% 40%;
     grid-template-rows: auto;
     grid-template-areas: "formulario mapa";
-    margin-top: 50px;
     margin-bottom: 50px;
-    justify-content: space-around;
+    justify-content: space-evenly;
     justify-items: center;
     column-gap: 50px;
 }
 
 #formularioContacto{
-    width: 450px;
+    width: 550px;
     background-color: #760AFF;
     border-radius: 10px;
     padding: 40px;
@@ -580,7 +675,7 @@ footer img {
 }
 
 #cajaMapa{
-    width: 530px;
+    width: 620px;
     height: 466px;
     border-radius: 10px;
     padding-bottom: 50px;
@@ -604,6 +699,7 @@ footer img {
 #cajaMapa iframe{
     margin-bottom: 36px;
     border-radius: 10px;
+    width: 100%;
 }
 
 /* ARTICULO BLOG */
@@ -647,15 +743,17 @@ footer img {
 }
 
 .parrafoIntroduccion{
-    width: 1171px;
-    margin: auto;
+    width: auto;
+    margin-left: 80px;
+    margin-right: 80px;
 }
 
 .cuerpoArticulo{
-    width: 1000px;
-    margin-left: 150px;
+    width: auto;
     margin-top: 20px;
     margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
     
 }
 
@@ -678,7 +776,16 @@ footer img {
 /*SMARTPHONE*/ 
 @media only screen and (max-width:449px){
 
+    .navbar-collapse {
+        height: 100vh;
+    }
+
     /* ESTILOS GENERALES */
+
+    nav li {
+        font-size: 16px;
+        padding: 15px 0px 15px 15px;
+    }
 
     h1{
         font-weight: 800;
@@ -721,14 +828,25 @@ footer img {
         justify-content: space-between;
         text-align: center;
         align-items: center;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
     .barraDeNavegacion ul{
         display: flex;
         flex-direction: column;
-        align-items: end;
+        align-items: start;
+        height: 100vh;
+        justify-content: flex-start;
+    }
+
+    #logo img{
+        padding-left: 30px;
+
+    }
+
+    .navbar-light .navbar-toggler {
+        padding-right: 30px;
     }
 
     .botonPrincipal{
@@ -863,10 +981,9 @@ footer img {
     }
 
     #nosotrosContenidoPrincipal p{
-        width: auto;
+        width: 260px;
         text-align: center;
         font-size: 14px;
-        margin: 0px 30px 0px 30px;
     }
 
     #contenedorCajasVioleta{
@@ -892,8 +1009,8 @@ footer img {
         width: auto;
     }
     
-    #ajusteNosotros{
-        margin-top: 562px;
+    #sectionNosotros{
+        margin-top: 660px;
     }
 
     #contenedorNosotros div{
@@ -909,26 +1026,26 @@ footer img {
 
     /* MARCAS */
 
-    .sliderMarcas{
-        width: auto;
-        height: 100px;
-        margin: 0px 20px 30px 20px;
+    .carousel-control-next-icon {
+        height: 30px;
+        width: 30px;
     }
 
-    .flechaAnterior{
-        position: absolute;
-        left: 0px;
-        top: 35px;
-        width: 30px;
+    .carousel-control-prev-icon {
         height: 30px;
+        width: 30px;
     }
 
-    .flechaSiguiente{
-        position: absolute;
-        right: 0px;
-        top: 35px;
-        width: 30px;
-        height: 30px;
+    .carousel-control-prev {
+        left: 10px;
+    }
+    
+    .carousel-control-next {
+        right: 10px;
+    }
+
+    .margenCarrusel{
+        margin-bottom: 30px;
     }
 
     /* BLOG */
@@ -1082,17 +1199,19 @@ footer img {
 
 }
 
-/*Ajuste subtitulo en Smartphone*/
-@media only screen and (max-width:364px){
-    #ajusteNosotros{
-        margin-top: 600px;
-    }
-}
-
 /*TABLET*/ 
 @media only screen and (min-width:450px) and (max-width:768px){
 
+    .navbar-collapse {
+        height: 100vh;
+    }
+
     /* ESTILOS GENERALES */
+
+    nav li {
+        font-size: 16px;
+        padding: 15px 0px 15px 15px;
+    }
 
     h1{
         font-weight: 800;
@@ -1127,6 +1246,7 @@ footer img {
 
     legend{
         font-size: 17px;
+        margin-bottom: 20px
     }
 
     .barraDeNavegacion{
@@ -1135,14 +1255,24 @@ footer img {
         justify-content: space-between;
         text-align: center;
         align-items: center;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
     .barraDeNavegacion ul{
         display: flex;
         flex-direction: column;
-        align-items: end;
+        align-items: start;
+        height: 100vh;
+        justify-content: flex-start;
+    }
+
+    #logo img{
+        padding-left: 30px;
+    }
+
+    .navbar-light .navbar-toggler {
+        padding-right: 30px;
     }
 
     .botonPrincipal{
@@ -1277,10 +1407,9 @@ footer img {
     }
 
     #nosotrosContenidoPrincipal p{
-        width: auto;
+        width: 400px;
         text-align: center;
         font-size: 14px;
-        margin: 0px 30px 0px 30px;
     }
   
     #contenedorCajasVioleta{
@@ -1306,8 +1435,8 @@ footer img {
         width: auto;
     }
    
-    #ajusteNosotros{
-        margin-top: 510px;
+    #sectionNosotros{
+        margin-top: 590px;
     }
 
     #contenedorNosotros div{
@@ -1323,26 +1452,26 @@ footer img {
 
     /* MARCAS */
 
-    .sliderMarcas{
-        width: auto;
-        height: 100px;
-        margin: 0px 20px 30px 20px;
+    .carousel-control-next-icon {
+        height: 40px;
+        width: 40px;
     }
 
-    .flechaAnterior{
-        position: absolute;
-        left: 0px;
-        top: 35px;
-        width: 30px;
-        height: 30px;
+    .carousel-control-prev-icon {
+        height: 40px;
+        width: 40px;
     }
 
-    .flechaSiguiente{
-        position: absolute;
-        right: 0px;
-        top: 35px;
-        width: 30px;
-        height: 30px;
+    .carousel-control-prev {
+        left: 20px;
+    }
+    
+    .carousel-control-next {
+        right: 20px;
+    }
+
+    .margenCarrusel{
+        margin-bottom: 30px;
     }
 
     /* BLOG */
@@ -1368,8 +1497,10 @@ footer img {
     }
     
     .formularioBlog{
-        width: 300px;
+        width: auto;
         box-sizing: border-box;
+        margin-left: 40px;
+        margin-right: 40px;
     }
 
     .elementosFormulario{
@@ -1380,7 +1511,7 @@ footer img {
     }
 
     .formularioBlog input{
-        width: 220px;
+        width: 800px;
         margin-bottom: 20px;
     }
 
@@ -1496,14 +1627,15 @@ footer img {
 
 }
 
+
 /*LAPTOP*/ 
 @media only screen and (min-width:769px) and (max-width:1024px){
 
     /* ESTILOS GENERALES */
     h1{
         font-weight: 800;
-        font-size: 40px;
-        line-height: 40px;
+        font-size: 55px;
+        line-height: 55px;
     }
 
     h2{
@@ -1536,27 +1668,12 @@ footer img {
 
     legend{
         font-size: 17px;
-    }
-
-    .barraDeNavegacion{
-        height: 110px;
-        display: flex;
-        justify-content: space-between;
-        text-align: center;
-        align-items: center;
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
-    .barraDeNavegacion ul{
-        display: flex;
-        flex-direction: column;
-        align-items: end;
+        margin-bottom: 20px;
     }
 
     .botonPrincipal{
         height: 35px;
-        width: 159px;
+        width: 180px;
         font-size: 16px;
         order: 4;
     }
@@ -1612,13 +1729,13 @@ footer img {
     #heroContenidoPrincipal{
         width: auto;
         height: 118px;
-        left: 44px;
+        left: 90px;
     }
 
     #heroContenidoPrincipal p{
-        font-size: 15px;
+        font-size: 16px;
         margin-top: 10px;
-        margin-bottom: 26px;
+        margin-bottom: 24px;
     }
 
     #barraContadores{
@@ -1702,10 +1819,9 @@ footer img {
     }
 
     #nosotrosContenidoPrincipal p{
-        width: auto;
+        width: 650px;
         text-align: center;
         font-size: 14px;
-        margin: 0px 30px 0px 30px;
     }
     
     #contenedorCajasVioleta{
@@ -1731,8 +1847,8 @@ footer img {
         width: auto;
     }
     
-    #ajusteNosotros{
-        margin-top: 500px;
+    #sectionNosotros{
+        margin-top: 550px;
     }
 
     #contenedorNosotros div{
@@ -1748,26 +1864,16 @@ footer img {
 
     /* MARCAS */
 
-    .sliderMarcas{
-        width: auto;
-        height: 100px;
-        margin: 0px 20px 30px 20px;
+    .carousel-control-prev {
+        left: 25px;
+    }
+    
+    .carousel-control-next {
+        right: 25px;
     }
 
-    .flechaAnterior{
-        position: absolute;
-        left: 0px;
-        top: 35px;
-        width: 30px;
-        height: 30px;
-    }
-
-    .flechaSiguiente{
-        position: absolute;
-        right: 0px;
-        top: 35px;
-        width: 30px;
-        height: 30px;
+    .margenCarrusel{
+        margin-bottom: 30px;
     }
 
     /* BLOG */
@@ -1793,8 +1899,10 @@ footer img {
     }
     
     .formularioBlog{
-        width: 300px;
+        width: auto;
         box-sizing: border-box;
+        margin-left: 40px;
+        margin-right: 40px;
     }
 
     .elementosFormulario{
@@ -1805,7 +1913,7 @@ footer img {
     }
 
     .formularioBlog input{
-        width: 220px;
+        width: 1000px;
         margin-bottom: 20px;
     }
 
@@ -1822,7 +1930,7 @@ footer img {
     }
     
     #formularioContacto{
-        width: auto;
+        width: 75%;
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -1838,7 +1946,7 @@ footer img {
 
     #cajaMapa {
         margin-top: 30px;
-        width: 90%;
+        width: 80%;
         height: 280px;
     }
     
@@ -1921,7 +2029,50 @@ footer img {
 
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1165px){
+/*Ajuste nav Bootstrap*/
+@media (min-width: 769px){
+.navbar-expand-lg {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    }
+
+    .navbar-expand-lg .navbar-toggler {
+        display: none;
+    }
+    
+    .navbar-expand-lg .navbar-collapse {
+        display: flex!important;
+        flex-basis: auto;
+    }
+
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+    }
+}
+
+/*Ajuste carrusel pacientes en pequeña Laptop*/
+@media screen and (max-width: 845px){
+    #carruselPacientes{
+        width: 300px;
+        height: 560px; 
+        flex-wrap: wrap;
+        align-content: flex-start;
+        margin-bottom: 30px;
+    }
+
+    #carruselPacientes div{
+        margin: 33px 28px 33px 28px;
+    }
+
+    #carruselPacientes img{
+        height: fit-content;
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
+    }
+}
+
+/*Ajuste contenedor contacto*/
+@media only screen and (min-width: 1025px) and (max-width: 1340px){
     #contenedorContacto{
         grid-template-columns: 100%;
         grid-template-areas: "formulario" "mapa";
