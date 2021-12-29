@@ -1,0 +1,794 @@
+/* Ajustes Bootstrap */
+
+*, ::after, ::before {
+    box-sizing: content-box;
+}
+
+p{
+    margin-bottom: 0;
+}
+
+a:hover {
+    color: white;
+}
+
+input::placeholder{
+    font-size: 16px;
+    padding-left: 16px;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+.nav-link {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: $colorPrincipal;
+    font-weight: 700;
+}
+
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, 
+.navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, 
+.navbar>.container-xxl {
+    background: white;
+    z-index: 10;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("../images/Burger.png");
+}
+
+.navbar-light .navbar-toggler {
+    border-color: white;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* ESTILOS GENERALES */
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav{ 
+    background-color: white;
+    width: 605px;
+    box-sizing: border-box;
+
+    li{
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 600;
+    }
+}
+
+a{
+    color: #212121;
+    text-decoration: none;
+}
+
+main{
+    background-color: white;
+}
+
+h1{
+    font-weight: 800;
+    font-size: 65px;
+    line-height: 65px;
+    color: $colorPrincipal;
+}
+
+h2{
+    font-size: 25px;
+    margin-bottom: 50px;
+    margin-left: 107px;
+    margin-top: 50px;
+}
+
+h3{
+    font-size: 18px;
+}
+
+h4{
+    font-size:15px;
+    margin-bottom: 25px;
+}
+
+legend{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+input{
+    height: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 10px;
+    border-style: none;
+}
+
+footer{
+    background-color: #212121;
+    color:white;
+    padding-bottom: 5px;
+
+    a{
+        color: white;
+    }
+
+    img {
+        height: 30px;
+        margin-right: 10px;
+        width: 30px;
+    }
+
+    & > div{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: auto;
+        grid-template-areas: "RRSS DireccionTel Horarios";
+        justify-content: space-around;
+        justify-items: center;
+        align-content: space-evenly;
+        padding: 54px 30px 54px 30px;
+    }
+}
+
+.barraDeNavegacion{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding-left: 73px;
+    padding-right: 73px;
+
+    .navbar-collapse{
+        justify-content: flex-end;
+    }
+
+    #logo{
+        padding: 24px 0px;
+        display: inline-block;
+
+        img{
+            width: 47px;
+            height: 47px;
+        }
+    }    
+}
+
+.navbar-collapse{
+    justify-content: flex-end;
+}
+
+.botonesFlotantes{
+    
+    #botonScrollTop{
+        top: 81%;
+    }
+
+    #botonWhatsApp{
+        top: 90%;
+    }
+
+    img{
+        position: fixed;
+        width: 48px;
+        height: 48px;
+        right:1%;
+        z-index: 1;
+    }
+}
+
+.infoFooter{
+    min-width: 320px;
+
+    a{
+        &.alineacionIconoTexto{
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .iconosRedesSociales{
+            display: inline-block;
+        }
+    }
+
+    #horariosDeAtencion{
+        text-align: left;
+    }
+}
+
+#copyright{
+    text-align: center;
+}
+
+/*INICIO*/
+
+#heroInicio{
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-image: url("../images/heroinicio.png");
+    background-position: right;
+    background-repeat: no-repeat;
+
+    #heroContenidoPrincipal{
+        position: absolute;
+        width: 331px;
+        height: 118px;
+        left: 90px;
+        top: 150px;
+
+        p{
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 20px;
+            color: $colorPrincipal;
+            margin-top: 26px;
+            margin-bottom: 26px;
+        }
+    }
+
+    .formularioNewsletter{
+        width: 600px;
+        height: auto;
+        box-sizing: border-box;
+        background-color: $colorPrincipal;
+        padding: 30px;
+        color: white;
+        border-radius: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+
+        .elementosFormularioNL{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+
+            input{
+                margin-bottom: 15px;
+                width: 100%;
+
+                #nombreUsuarioNL{
+                    width: auto;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-bottom: 20px;
+                }
+
+                #emailUsuarioNL{
+                    width: auto;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-bottom: 20px;
+                }
+            } 
+            
+            .botonPrincipal{
+                order: 2;
+            }
+            
+            .botonEnlace{
+                margin-top: 15px;
+                margin: auto;
+                order: 1;
+
+            }
+        }
+    }
+    
+    #barraContadores{
+        position: absolute;
+        width: 100%;
+        bottom: 0vh;
+        background-color: $colorPrincipal;
+        color:white;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 100px;
+        grid-template-areas: "area1 area2 area3 area4";
+        justify-content: space-around;
+        text-align: center;
+        align-items: center;
+
+        .contadorVacunas{
+            grid-area: area1;
+        }
+
+        .contadorCastraciones{
+            grid-area: area2;
+        }
+    
+        .contadorChapitas{
+            grid-area: area3;
+        }
+    
+        .contadorPulgas{
+            grid-area: area4;
+        }
+
+        .contadorNumero{
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        .contadorTexto{
+            font-size: 15px;
+            font-weight: 600;
+        }
+    }    
+}
+
+.botonPrincipal{
+    background-color: $colorAcento;
+    color: white;
+    height: 42px;
+    width: 254px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+
+    &:hover{
+        background-color: $colorAcentoHover;
+    }
+}
+
+#contenedorServicios{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1227px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    div{
+        flex-shrink: 0;
+        width: 230px;
+        height: 180px;
+        font-weight: 600;
+        font-size: 15px;
+        text-align: center;
+        line-height: 20px;
+        padding: 34px 32px 23px 32px;
+        box-shadow: 0px 1px 15px rgba(155, 155, 155, 0.2);
+        border-radius: 10px;
+        display: inline-block;
+        vertical-align: top;
+        margin: 0px 25px 50px 25px;
+    }
+
+    h3{
+        margin-bottom: 27px;
+    }
+}
+
+#subtituloPacientes{
+    margin-top: 0px;
+}
+.carousel-item {
+    transition: transform .6s ease-in;
+
+    .carruselPacientes{
+        width: 818px;
+        height: 298px;
+        margin-left: auto;
+        margin-right: auto ;
+        margin-bottom: 50px;
+        background-color: $colorPrincipal;
+        border-radius: 10px;
+        display: flex;
+
+        div{
+            margin: auto;
+            text-align: center;
+            color: white;
+            font-size: 15px;
+            margin-left: 35px;
+            margin-right: 35px;
+        }
+
+        img{
+            border-top-left-radius: 9px;
+            border-bottom-left-radius: 9px;
+        }
+    }
+}
+
+/* NOSOTROS */
+
+#heroNosotros{
+    width: 100%;
+    background-image: url("../images/heronosotros.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    
+    #nosotrosContenidoPrincipal{
+        overflow: auto;
+
+        h2{
+            color: white;
+        }
+
+        p{
+            margin: auto;
+            text-align: center;
+            font-size: 15px;
+            color: white;
+            width: 1000px;
+        }
+    }
+}
+
+#contenedorCajasVioleta{
+    display: grid;
+    grid-auto-columns: 326px 326px 326px;
+    grid-template-rows: auto;
+    grid-template-areas: "Mision Vision Valores";
+    justify-content:space-evenly;
+    
+    .cajasVioleta{
+        background-color: $colorPrincipal;
+        padding: 25px 33px 25px 33px;
+        text-align: center;
+        color: white;   
+        top: 60px;
+        position:relative;
+
+        p{
+            margin-top: 10px;
+            width: 260px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 15px;
+        }
+
+        ul{
+            margin-top: 10px;
+            width: 260px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            padding-left: 0px;
+        }
+        
+        li{
+            font-size: 15px;
+            font-weight: 500;
+            display: inline-block;
+        }
+    }
+}
+
+#seccionNosotros{
+    margin-top: 140px;
+
+    #contenedorNosotros{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        h3{
+            margin-top: 17px;
+            margin-bottom: 11px;
+        }
+        
+        div{
+            flex-shrink: 0;
+            width: 326px;
+            height: auto;
+            font-weight: 600;
+            font-size: 15px;
+            text-align: center;
+            line-height: 20px;
+            box-shadow: 0px 1px 15px rgba(155, 155, 155, 0.2);
+            border-radius: 10px;
+            vertical-align: top;
+            margin-bottom: 50px;
+            padding-bottom: 11px;
+        }
+        
+        img{
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    }
+}
+
+/* MARCAS */
+
+.carousel-inner{
+
+    .carousel-item {
+        transition: transform .6s ease-in;
+
+        .w-100 {
+        width: 80%!important;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+        }
+    }
+}
+
+button{
+
+    &.carousel-control-prev {
+        left: 37px;
+        opacity: 1;
+
+        .carousel-control-prev-icon {
+        background-image: url("../images/flechaanterior.png");
+        height: 55px;
+        width: 55px;
+        }
+    }
+
+    &.carousel-control-next {
+        right: 37px;
+        opacity: 1;
+
+        .carousel-control-next-icon {
+        background-image: url("../images/flechasiguiente.png");
+        height: 55px;
+        width: 55px;
+        }
+    }
+}
+
+.margenCarrusel{
+    margin-bottom: 50px;
+}
+
+/* SECCIÓN BLOG */
+
+#heroBlog{
+    width: 100%;
+    background-image: url("../images/heroblog.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    overflow: auto;
+
+    h2{
+        color: white;
+    }
+
+    p{
+        margin: auto;
+        text-align: center;
+        font-size: 15px;
+        color: white;
+    }
+}
+
+#contenedorArticulos{
+    display: flex;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1500px;
+
+    .cajaArticulo{
+        flex-shrink: 0;
+        width: 326px;
+        height: auto;
+        font-weight: 600;
+        font-size: 15px;
+        text-align: center;
+        line-height: 20px;
+        box-shadow: 0px 1px 15px rgba(155, 155, 155, 0.2);
+        border-radius: 10px;
+        vertical-align: top;
+        margin: 0px 25px 50px 25px;
+        padding-bottom: 20px;
+
+        h3{
+            margin-top: 17px;
+            margin-bottom: 16px;
+        }
+
+        img{
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .botonLeer{
+            width: 125px;
+            height: 35px;
+            background: $colorPrincipal;
+            border-radius: 10px;
+            padding: 5px 44px 5px 44px;
+            color: white;
+        
+            &:hover{
+                background-color: $colorPrincipalHover;
+            }
+        }
+    }
+}
+
+.formularioBlog{
+    background-color: $colorPrincipal;
+    color: white;
+    width: 1000px;
+    border-radius: 10px;
+    padding-top: 33px;
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 40px;
+
+    .elementosFormulario{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+
+        input{
+            width: 310px;
+        }
+    }
+}
+
+.botonEnlace{
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    background-color: transparent;
+    border-style: none;
+}
+
+/* CONTACTO */
+
+#contenedorContacto{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: auto;
+    grid-template-areas: "formulario mapa";
+    margin-bottom: 50px;
+    justify-content: space-evenly;
+    justify-items: center;
+    column-gap: 50px;
+
+    #formularioContacto{
+        width: 550px;
+        background-color: $colorPrincipal;
+        border-radius: 10px;
+        padding: 40px;
+
+        input{
+            width: 100%;
+            margin-bottom: 26px;
+        }
+
+        #mensajeUsuario{
+            height: 100px;
+        }
+
+        div{
+            display: flex;
+            justify-content:end;
+        }
+
+        legend{
+            color: white;
+            margin-bottom: 16px;
+        }
+    }
+}
+
+#cajaMapa{
+    width: 620px;
+    height: 466px;
+    border-radius: 10px;
+    padding-bottom: 50px;
+    background-color: white;
+    box-shadow: 0px 1px 15px rgba(155, 155, 155, 0.2);
+    border-radius: 10px;
+    text-align: center;
+
+    img{
+        height: 30px;
+        width: 30px;
+        display: inline-block;
+    }
+
+    div{
+        text-align: center;
+        justify-content: center;
+    }
+
+    iframe{
+        margin-bottom: 36px;
+        border-radius: 10px;
+        width: 100%;
+    }
+}
+
+/* ARTICULO BLOG */
+
+#heroArticuloBlog{
+    width: 100%;
+    background-image: url("../images/heroarticulo1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    overflow: auto;
+
+    h2{
+        color: white;
+    }
+
+    p{
+        margin: auto;
+        text-align: center;
+        font-size: 30px;
+        color: white;
+        width: 1216px;
+        font-weight: 600;
+    }
+}
+
+#avatarAutor{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+
+    img{
+        height: 50px;
+        width: 50px;
+        justify-items: center;
+        margin-right: 15px;
+    }
+}
+
+.parrafoIntroduccion{
+    width: auto;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.cuerpoArticulo{
+    width: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+    li{
+        font-size: 15px;
+        font-weight: 500;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}

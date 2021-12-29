@@ -1,0 +1,91 @@
+/*Ajuste nav Bootstrap*/
+@media (min-width: 769px){
+    .navbar-expand-lg {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        }
+    
+    .navbar-expand-lg .navbar-toggler {
+        display: none;
+    }
+    
+    .navbar-expand-lg .navbar-collapse {
+        display: flex!important;
+        flex-basis: auto;
+    }
+
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+    }
+}
+
+/*Ajuste carrusel pacientes en pequeña Laptop*/
+@media screen and (max-width: 845px){
+
+    .carousel-item {
+        transition: transform .6s ease-in;
+
+        .carruselPacientes{
+            width: 300px;
+            height: 560px; 
+            flex-wrap: wrap;
+            align-content: flex-start;
+            margin-bottom: 30px;
+
+            div{
+                margin: 33px 28px 33px 28px;
+            }
+
+            img{
+                height: fit-content;
+                width: 100%;
+                border-radius: 10px 10px 0px 0px;
+            }
+        }
+    }
+}
+
+/*Ajuste formulario blog*/
+@media only screen and (min-width: 1025px) and (max-width: 1100px){
+
+    .botonPrincipal{
+        order: 4;
+    }
+
+    .botonEnlace{
+        order: 3;
+    }
+
+    .formularioBlog{
+        width: auto;
+        box-sizing: border-box;
+        margin-left: 40px;
+        margin-right: 40px;
+
+        .elementosFormulario{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+
+            input{
+                width: 2000px;
+                margin-bottom: 20px;
+            }
+
+            .botonEnlace{
+                margin-left: 0px;
+            }
+        }
+    }
+}
+
+/*Ajuste contenedor contacto*/
+@media only screen and (min-width: 1025px) and (max-width: 1340px){
+    #contenedorContacto{
+        grid-template-columns: 100%;
+        grid-template-areas: "formulario" "mapa";
+        row-gap: 30px;
+        margin: 30px 20px 30px 20px;
+    }
+}
