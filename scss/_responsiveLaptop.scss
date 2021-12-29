@@ -1,0 +1,422 @@
+@media only screen and (min-width:769px) and (max-width:1024px){
+
+    /* ESTILOS GENERALES */
+    h1{
+        font-weight: 800;
+        font-size: 55px;
+        line-height: 55px;
+    }
+
+    h2{
+        font-size: $H2Responsive;
+        margin-bottom: 30px;
+        margin-left: 0px;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    h3{
+        font-size: $H3Responsive;
+    }
+
+    h4{
+        font-size: $H4Responsive;
+        margin-bottom: 25px;
+    }
+
+    footer > div{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: auto;
+        grid-template-areas: "RRSS DireccionTel Horarios";
+        justify-content: space-around;
+        justify-items: center;
+        align-content: space-evenly;
+        padding: 54px 30px 54px 30px;
+    }
+
+    legend{
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+
+    .botonPrincipal{
+        height: 35px;
+        width: 180px;
+        font-size: 16px;
+        order: 4;
+    }
+
+    .botonEnlace{
+        font-size: 16px;
+        order: 3;
+    }
+
+    .infoFooter{
+        min-width: 320px;
+        padding-left: 50px;
+        box-sizing: border-box;
+    
+        span{
+            font-size: 14px;
+        }
+
+        p{
+            font-size: 14px;
+        }
+    }
+
+    .botonesFlotantes{
+     
+        img{
+            position: fixed;
+            width: 50px;
+            height: 50px;
+            right: 10px;
+            z-index: 1;
+        }
+        
+        #botonWhatsApp{
+            bottom: 20px;
+        }
+
+        #botonScrollTop{
+            display: none;
+        }
+    }
+
+    #copyright{
+        font-size: 12px;
+    }
+
+    /*INICIO*/
+
+    #heroInicio{
+        width: 100%;
+        height: calc(100vh - 110px);
+        background-image: url("../images/heroinicio.png");
+        background-position: center;
+        background-repeat: no-repeat;
+
+        #heroContenidoPrincipal{
+            width: auto;
+            height: 118px;
+            left: 90px;
+
+            p{
+                font-size: 16px;
+                margin-top: 10px;
+                margin-bottom: 24px;
+            }
+        }
+        
+        #barraContadores{
+            position: absolute;
+            width: 100%;
+            bottom: 0vh;
+            background-color: $colorPrincipal;
+            color:white;
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-rows: 100px;
+            grid-template-areas: "area1 area2 area3 area4";
+            justify-content: space-around;
+            text-align: center;
+            align-items: center;
+
+            .contadorVacunas{
+                grid-area: area1;
+            }
+
+            .contadorCastraciones{
+                grid-area: area2;
+            }
+        
+            .contadorChapitas{
+                grid-area: area3;
+            }
+        
+            .contadorPulgas{
+                grid-area: area4;
+            }
+
+            p{
+                .contadorTexto{
+                font-size: 14px;
+                }
+            }
+        }
+    }
+
+    #contenedorServicios{
+
+        div{
+            width: 235px;
+            height: 160px;
+            margin-bottom: 30px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    }
+
+
+    .carousel-item {
+        transition: transform .6s ease-in;
+
+        .carruselPacientes{
+            width: 818px;
+            height: 298px;
+            margin-left: auto;
+            margin-right: auto ;
+            margin-bottom: 50px;
+            background-color: $colorPrincipal;
+            border-radius: 10px;
+            display: flex;
+
+            div{
+                margin: auto;
+                text-align: center;
+                color: white;
+                font-size: 15px;
+                margin-left: 35px;
+                margin-right: 35px;
+            }
+
+            img{
+                border-top-left-radius: 9px;
+                border-bottom-left-radius: 9px;
+            }
+        }
+    }
+
+    /* NOSOTROS */
+
+    #heroNosotros{
+            background-image: url("../images/heronosotrosmobile.png");
+            height: 340px;
+        
+        #nosotrosContenidoPrincipal{
+
+            h2{
+                margin-left: 20px;
+                text-align: start;
+            }
+
+            p{
+                width: 650px;
+                text-align: center;
+                font-size: 14px;
+            }
+        }
+    }
+
+    #contenedorCajasVioleta{
+        display: grid;
+        grid-auto-columns: 300px;
+        grid-template-rows: auto;
+        grid-template-areas: "Mision" "Vision" "Valores";
+        justify-content:space-evenly;
+        row-gap: 30px;
+        margin-top: -30px;
+        
+        .cajasVioleta{
+
+            p{
+                font-size: 14px;
+                width: 230px;
+            }
+
+            ul{
+                width: auto;
+            }
+            
+            li{
+                font-size: 14px;
+            }
+        }
+    }
+
+    #seccionNosotros{
+        margin-top: 560px;
+
+        #contenedorNosotros{
+            
+            div{
+                width: 300px;
+                margin-bottom: 30px;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+            
+            p{
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    /* MARCAS */
+
+    button{
+
+        &.carousel-control-prev {
+            left: 25px;
+        }
+
+        &.carousel-control-next {
+            right: 25px;
+        }
+    }
+
+    .margenCarrusel{
+        margin-bottom: 30px;
+    }
+
+    /* SECCIÓN BLOG */
+
+    #heroBlog{
+        background-image: url("../images/heroblogmobile.png");
+
+        h2{
+            margin-left: 20px;
+            text-align: start;
+        }
+
+        p{
+            width: auto;
+            text-align: center;
+            font-size: 14px;
+            margin: 70px 50px 70px 50px;
+        }
+    }
+
+    #contenedorArticulos{
+
+        .cajaArticulo{
+            width: 300px;
+        }
+    }
+
+    .formularioBlog{
+        width: auto;
+        box-sizing: border-box;
+        margin-left: 40px;
+        margin-right: 40px;
+
+        .elementosFormulario{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+
+            input{
+                width: 1000px;
+                margin-bottom: 20px;
+            }
+
+            .botonEnlace{
+                margin-left: 0px;
+            }
+        }
+    }
+
+    /* CONTACTO */
+
+    #contenedorContacto{
+        grid-template-columns: 100%;
+        grid-template-areas: "formulario" "mapa";
+        margin: 30px 20px 30px 20px;
+
+        #formularioContacto{
+            width: 75%;
+            padding-left: 20px;
+            padding-right: 20px;
+
+            div{
+                justify-content: space-between;
+            }
+        }
+    }
+
+    #cajaMapa{
+        margin-top: 30px;
+        width: 80%;
+        height: 280px;
+
+        img{
+            height: 25px;
+            width: 25px;
+        }
+
+        span{
+            font-size: 14px;
+        }
+
+        iframe{
+            width: 100%;
+            height: 220px;
+        }
+    }
+
+    /* ARTICULO BLOG */
+
+    #heroArticuloBlog{
+        background-image: url("../images/heroarticulo1mobile.png");
+
+        h2{
+            margin-left: 20px;
+            text-align: start;
+        }
+
+        p{
+            width: auto;
+            text-align: center;
+            font-size: 16px;
+            margin: 110px 50px 100px 50px;
+        }
+    }
+
+    #avatarAutor{
+        display: flex;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        margin-left: 30px;
+
+        img{
+            height: 30px;
+            width: 30px;
+        }
+
+        span{
+            font-size: 14px;
+        }
+    }
+
+    .parrafoIntroduccion{
+        width: auto;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .cuerpoArticulo{
+        width: auto;
+        margin-left: 60px;
+        margin-right: 60px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+
+        ul{
+            margin-top: 10px;
+            width: 260px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
+        li{
+            font-size: 15px;
+            font-weight: 500;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+}
