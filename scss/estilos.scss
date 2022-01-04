@@ -85,10 +85,7 @@ main{
 }
 
 h1{
-    font-weight: 800;
-    font-size: 65px;
-    line-height: 65px;
-    color: $colorPrincipal;
+    @include h1 (800, 65px, 65px);
 }
 
 h2{
@@ -325,16 +322,15 @@ footer{
         }
 
         .contadorNumero{
-            font-size: 30px;
-            font-weight: 600;
+            @include contador(30px);
         }
 
         .contadorTexto{
-            font-size: 15px;
-            font-weight: 600;
+            @include contador(15px);
         }
     }    
 }
+
 
 .botonPrincipal{
     background-color: $colorAcento;

@@ -1,0 +1,11 @@
+@mixin contador($tamLetra) {
+    font-size: $tamLetra;
+    font-weight: 600;
+}
+
+@mixin h1($grosorLetraH1, $tamLetraH1, $lineHeightH1) {
+    font-weight: $grosorLetraH1;
+    font-size: $tamLetraH1;
+    line-height: $lineHeightH1;
+    color: $colorPrincipal;
+}
