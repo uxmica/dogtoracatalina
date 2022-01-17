@@ -1,3 +1,5 @@
 # Sitio web - Dogtora Catalina
 
-URL: https://uxmica.github.io/dogtoracatalina/
+URL: https://dogtoracatalina.netlify.app/
+
+GitHub Pages: https://uxmica.github.io/dogtoracatalina/
