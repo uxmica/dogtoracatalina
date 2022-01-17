@@ -1,4 +1,4 @@
-/* Ajustes Bootstrap */
+/* AJUSTES BOOTSTRAP */
 
 *, ::after, ::before {
     box-sizing: content-box;
@@ -151,15 +151,15 @@ footer{
     justify-content: space-between;
     text-align: center;
     align-items: center;
-    padding-left: 73px;
-    padding-right: 73px;
+    padding-left: 40px;
+    padding-right: 40px;
 
     .navbar-collapse{
         justify-content: flex-end;
     }
 
     #logo{
-        padding: 24px 0px;
+        
         display: inline-block;
 
         img{
@@ -241,56 +241,74 @@ footer{
             margin-bottom: 26px;
         }
     }
-
-    .formularioNewsletter{
-        width: 600px;
-        height: auto;
-        box-sizing: border-box;
-        background-color: $colorPrincipal;
-        padding: 30px;
-        color: white;
+    .modal-content{
+        border: none;
         border-radius: 10px;
-        margin-left: 20px;
-        margin-right: 20px;
+        background-color: transparent;
 
-        .elementosFormularioNL{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            margin-top: 20px;
+        .modal-body{
+            padding: 0rem;
 
-            input{
-                margin-bottom: 15px;
+            .formularioNewsletter{
                 width: 100%;
+                height: auto;
+                box-sizing: border-box;
+                background-color: $colorPrincipal;
+                padding: 10px 30px 30px 30px;
+                color: white;
+                border-radius: 10px;
 
-                #nombreUsuarioNL{
-                    width: auto;
-                    margin-left: auto;
-                    margin-right: auto;
-                    margin-bottom: 20px;
+                .btn-close{
+                    position: absolute;
+                    right: 10px;
+                    color: white;
+                    background: url("../images/botonCruz.png") center/1em auto no-repeat;
                 }
 
-                #emailUsuarioNL{
-                    width: auto;
-                    margin-left: auto;
-                    margin-right: auto;
-                    margin-bottom: 20px;
+                legend{
+                    margin-top: 20px;
                 }
-            } 
-            
-            .botonPrincipal{
-                order: 2;
-            }
-            
-            .botonEnlace{
-                margin-top: 15px;
-                margin: auto;
-                order: 1;
 
+                .elementosFormularioNL{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    margin-top: 20px;
+
+                    input{
+                        margin-bottom: 15px;
+                        width: 100%;
+
+                        #nombreUsuarioNL{
+                            width: auto;
+                            margin-left: auto;
+                            margin-right: auto;
+                            margin-bottom: 20px;
+                        }
+
+                        #emailUsuarioNL{
+                            width: auto;
+                            margin-left: auto;
+                            margin-right: auto;
+                            margin-bottom: 20px;
+                        }
+                    } 
+                    
+                    .botonPrincipal{
+                        order: 2;
+                    }
+                    
+                    .botonEnlace{
+                        margin-top: 15px;
+                        margin: auto;
+                        order: 1;
+
+                    }
+                }
             }
         }
     }
-    
+
     #barraContadores{
         position: absolute;
         width: 100%;
@@ -381,7 +399,7 @@ footer{
     margin-top: 0px;
 }
 .carousel-item {
-    transition: transform .6s ease-in;
+    transition: transform .9s ease-in;
 
     .carruselPacientes{
         width: 818px;
@@ -504,18 +522,42 @@ footer{
             border-radius: 10px;
             vertical-align: top;
             margin-bottom: 50px;
-            padding-bottom: 11px;
+            padding-bottom: 18px;
         }
         
         img{
             width: 100%;
             height: auto;
-            border-radius: 10px;
+            border-radius: 10px 10px 0px 0px;
         }
     }
 }
 
 /* MARCAS */
+
+#myModal{
+    .modal-content {
+        border: none;
+        border-radius: 10px;
+        background-color: transparent;
+
+        .modal-body{
+            padding: 0rem;
+
+            .btn-close{
+                position: absolute;
+                right: 10px;
+                margin-top: 10px;
+                color: white;
+                background: url("../images/botonCruz.png") center/1em auto no-repeat;
+            }
+        }
+
+        img{
+            width: 100%;
+        }
+    }
+}
 
 .carousel-inner{
 
@@ -605,7 +647,7 @@ button{
         border-radius: 10px;
         vertical-align: top;
         margin: 0px 25px 50px 25px;
-        padding-bottom: 20px;
+        padding-bottom: 25px;
 
         h3{
             margin-top: 17px;
@@ -615,7 +657,7 @@ button{
         img{
             width: 100%;
             height: auto;
-            border-radius: 10px;
+            border-radius: 10px 10px 0px 0px;
         }
 
         .botonLeer{
@@ -669,6 +711,7 @@ button{
     grid-template-columns: 40% 40%;
     grid-template-rows: auto;
     grid-template-areas: "formulario mapa";
+    margin-top: 40px;
     margin-bottom: 50px;
     justify-content: space-evenly;
     justify-items: center;
@@ -692,6 +735,10 @@ button{
         div{
             display: flex;
             justify-content:end;
+
+                .borrarContacto{
+                    margin-right: 40px;
+                }
         }
 
         legend{
@@ -731,14 +778,49 @@ button{
 
 /* ARTICULO BLOG */
 
-#heroArticuloBlog{
+.heroArticuloBlog{
     width: 100%;
-    background-image: url("../images/heroarticulo1.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 350px;
     overflow: auto;
+
+    &.articulo1{
+        background-image: url("../images/heroarticulo1.png");
+    }
+
+    &.articulo2{
+        background-image: url("../images/heroarticulo2.png");
+    }
+
+    &.articulo3{
+        background-image: url("../images/heroarticulo3.png");
+    }
+
+    &.articulo4{
+        background-image: url("../images/heroarticulo4.png");
+    }
+
+    &.articulo5{
+        background-image: url("../images/heroarticulo5.png");
+    }
+
+    &.articulo6{
+        background-image: url("../images/heroarticulo6.png");
+    }
+
+    &.articulo7{
+        background-image: url("../images/heroarticulo7.png");
+    }
+
+    &.articulo8{
+        background-image: url("../images/heroarticulo8.png");
+    }
+
+    &.articulo9{
+        background-image: url("../images/heroarticulo9.png");
+    }
 
     h2{
         color: white;
@@ -759,6 +841,7 @@ button{
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 100px;
+    align-items: center;
 
     img{
         height: 50px;
@@ -780,6 +863,14 @@ button{
     margin-bottom: 50px;
     margin-left: 100px;
     margin-right: 100px;
+
+    ul{
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        padding-left: 0rem;
+    }
 
     li{
         font-size: 15px;

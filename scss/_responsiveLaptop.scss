@@ -92,8 +92,8 @@
 
     #heroInicio{
         width: 100%;
-        height: calc(100vh - 110px);
-        background-image: url("../images/heroinicio.png");
+        height: calc(100vh - 60px);
+        background-image: url("../images/herotablet.png");
         background-position: center;
         background-repeat: no-repeat;
 
@@ -158,9 +158,8 @@
         }
     }
 
-
     .carousel-item {
-        transition: transform .6s ease-in;
+        transition: transform .9s ease-in;
 
         .carruselPacientes{
             width: 818px;
@@ -358,8 +357,45 @@
 
     /* ARTICULO BLOG */
 
-    #heroArticuloBlog{
+    .heroArticuloBlog{
         background-image: url("../images/heroarticulo1mobile.png");
+
+        &.articulo1{
+            background-image: url("../images/heroarticulo1.png");
+        }
+    
+        &.articulo2{
+            background-image: url("../images/heroarticulo2.png");
+        }
+    
+        &.articulo3{
+            background-image: url("../images/heroarticulo3.png");
+        }
+    
+        &.articulo4{
+            background-image: url("../images/heroarticulo4.png");
+        }
+    
+        &.articulo5{
+            background-image: url("../images/heroarticulo5.png");
+        }
+    
+        &.articulo6{
+            background-image: url("../images/heroarticulo6.png");
+        }
+    
+        &.articulo7{
+            background-image: url("../images/heroarticulo7.png");
+        }
+    
+        &.articulo8{
+            background-image: url("../images/heroarticulo8.png");
+        }
+    
+        &.articulo9{
+            background-image: url("../images/heroarticulo9.png");
+        }
+    
 
         h2{
             margin-left: 20px;
@@ -405,10 +441,10 @@
 
         ul{
             margin-top: 10px;
-            width: 260px;
             margin-left: auto;
             margin-right: auto;
             display: block;
+            padding-left: 0rem;
         }
 
         li{
