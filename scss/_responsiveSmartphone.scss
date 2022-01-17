@@ -19,8 +19,8 @@
     h2{
         font-size: $H2Responsive;
         margin-bottom: 30px;
-        margin-left: 0px;
         margin-top: 30px;
+        margin-left: 0px;
         text-align: center;
     }
 
@@ -48,7 +48,7 @@
     }
 
     .barraDeNavegacion{
-        height: 110px;
+        height: 60px;
         display: flex;
         justify-content: space-between;
         text-align: center;
@@ -62,17 +62,20 @@
             align-items: start;
             height: 100vh;
             justify-content: flex-start;
+            padding-top: 30px;
         }    
     }
 
     #logo{
         img{
-            padding-left: 30px;
+            height: 40px;
+            width: 40px;
+            padding-left: 20px;
         }
     }
 
     .navbar-light .navbar-toggler {
-        padding-right: 30px;
+        padding-right: 20px;
     }
 
     .botonPrincipal{
@@ -128,7 +131,7 @@
 
     #heroInicio{
         width: 100%;
-        height: calc(100vh - 110px);
+        height: calc(100vh - 60px);
         background-image: url("../images/heromobile.png");
         background-position: center;
         background-repeat: no-repeat;
@@ -137,6 +140,7 @@
             width: auto;
             height: 118px;
             left: 44px;
+            top: 85px;
 
             p{
                 font-size: 15px;
@@ -387,8 +391,44 @@
 
     /*ARTICULO BLOG*/
 
-    #heroArticuloBlog{
-        background-image: url("../images/heroarticulo1mobile.png");
+    .heroArticuloBlog{
+
+        &.articulo1{
+            background-image: url("../images/heroarticulo1mobile.png");
+        }
+    
+        &.articulo2{
+            background-image: url("../images/heroarticulo2mobile.png");
+        }
+    
+        &.articulo3{
+            background-image: url("../images/heroarticulo3mobile.png");
+        }
+    
+        &.articulo4{
+            background-image: url("../images/heroarticulo4mobile.png");
+        }
+    
+        &.articulo5{
+            background-image: url("../images/heroarticulo5mobile.png");
+        }
+    
+        &.articulo6{
+            background-image: url("../images/heroarticulo6mobile.png");
+        }
+    
+        &.articulo7{
+            background-image: url("../images/heroarticulo7mobile.png");
+        }
+    
+        &.articulo8{
+            background-image: url("../images/heroarticulo8mobile.png");
+        }
+    
+        &.articulo9{
+            background-image: url("../images/heroarticulo9mobile.png");
+        }
+    
 
         h2{
             margin-left: 20px;
@@ -434,10 +474,10 @@
 
         ul{
             margin-top: 10px;
-            width: 260px;
             margin-left: auto;
             margin-right: auto;
             display: block;
+            padding-left: 0rem;
         }
 
         li{

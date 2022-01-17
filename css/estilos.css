@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Ajustes Bootstrap */
+/* AJUSTES BOOTSTRAP */
 *, ::after, ::before {
   box-sizing: content-box; }
 
@@ -122,12 +122,11 @@ footer {
   justify-content: space-between;
   text-align: center;
   align-items: center;
-  padding-left: 73px;
-  padding-right: 73px; }
+  padding-left: 40px;
+  padding-right: 40px; }
   .barraDeNavegacion .navbar-collapse {
     justify-content: flex-end; }
   .barraDeNavegacion #logo {
-    padding: 24px 0px;
     display: inline-block; }
     .barraDeNavegacion #logo img {
       width: 47px;
@@ -183,40 +182,51 @@ footer {
       color: #760AFF;
       margin-top: 26px;
       margin-bottom: 26px; }
-  #heroInicio .formularioNewsletter {
-    width: 600px;
-    height: auto;
-    box-sizing: border-box;
-    background-color: #760AFF;
-    padding: 30px;
-    color: white;
+  #heroInicio .modal-content {
+    border: none;
     border-radius: 10px;
-    margin-left: 20px;
-    margin-right: 20px; }
-    #heroInicio .formularioNewsletter .elementosFormularioNL {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin-top: 20px; }
-      #heroInicio .formularioNewsletter .elementosFormularioNL input {
-        margin-bottom: 15px;
-        width: 100%; }
-        #heroInicio .formularioNewsletter .elementosFormularioNL input #nombreUsuarioNL {
-          width: auto;
-          margin-left: auto;
-          margin-right: auto;
-          margin-bottom: 20px; }
-        #heroInicio .formularioNewsletter .elementosFormularioNL input #emailUsuarioNL {
-          width: auto;
-          margin-left: auto;
-          margin-right: auto;
-          margin-bottom: 20px; }
-      #heroInicio .formularioNewsletter .elementosFormularioNL .botonPrincipal {
-        order: 2; }
-      #heroInicio .formularioNewsletter .elementosFormularioNL .botonEnlace {
-        margin-top: 15px;
-        margin: auto;
-        order: 1; }
+    background-color: transparent; }
+    #heroInicio .modal-content .modal-body {
+      padding: 0rem; }
+      #heroInicio .modal-content .modal-body .formularioNewsletter {
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        background-color: #760AFF;
+        padding: 10px 30px 30px 30px;
+        color: white;
+        border-radius: 10px; }
+        #heroInicio .modal-content .modal-body .formularioNewsletter .btn-close {
+          position: absolute;
+          right: 10px;
+          color: white;
+          background: url("../images/botonCruz.png") center/1em auto no-repeat; }
+        #heroInicio .modal-content .modal-body .formularioNewsletter legend {
+          margin-top: 20px; }
+        #heroInicio .modal-content .modal-body .formularioNewsletter .elementosFormularioNL {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          margin-top: 20px; }
+          #heroInicio .modal-content .modal-body .formularioNewsletter .elementosFormularioNL input {
+            margin-bottom: 15px;
+            width: 100%; }
+            #heroInicio .modal-content .modal-body .formularioNewsletter .elementosFormularioNL input #nombreUsuarioNL {
+              width: auto;
+              margin-left: auto;
+              margin-right: auto;
+              margin-bottom: 20px; }
+            #heroInicio .modal-content .modal-body .formularioNewsletter .elementosFormularioNL input #emailUsuarioNL {
+              width: auto;
+              margin-left: auto;
+              margin-right: auto;
+              margin-bottom: 20px; }
+          #heroInicio .modal-content .modal-body .formularioNewsletter .elementosFormularioNL .botonPrincipal {
+            order: 2; }
+          #heroInicio .modal-content .modal-body .formularioNewsletter .elementosFormularioNL .botonEnlace {
+            margin-top: 15px;
+            margin: auto;
+            order: 1; }
   #heroInicio #barraContadores {
     position: absolute;
     width: 100%;
@@ -286,7 +296,7 @@ footer {
   margin-top: 0px; }
 
 .carousel-item {
-  transition: transform .6s ease-in; }
+  transition: transform .9s ease-in; }
   .carousel-item .carruselPacientes {
     width: 818px;
     height: 298px;
@@ -381,13 +391,28 @@ footer {
       border-radius: 10px;
       vertical-align: top;
       margin-bottom: 50px;
-      padding-bottom: 11px; }
+      padding-bottom: 18px; }
     #seccionNosotros #contenedorNosotros img {
       width: 100%;
       height: auto;
-      border-radius: 10px; }
+      border-radius: 10px 10px 0px 0px; }
 
 /* MARCAS */
+#myModal .modal-content {
+  border: none;
+  border-radius: 10px;
+  background-color: transparent; }
+  #myModal .modal-content .modal-body {
+    padding: 0rem; }
+    #myModal .modal-content .modal-body .btn-close {
+      position: absolute;
+      right: 10px;
+      margin-top: 10px;
+      color: white;
+      background: url("../images/botonCruz.png") center/1em auto no-repeat; }
+  #myModal .modal-content img {
+    width: 100%; }
+
 .carousel-inner .carousel-item {
   transition: transform .6s ease-in; }
   .carousel-inner .carousel-item .w-100 {
@@ -453,14 +478,14 @@ button.carousel-control-next {
     border-radius: 10px;
     vertical-align: top;
     margin: 0px 25px 50px 25px;
-    padding-bottom: 20px; }
+    padding-bottom: 25px; }
     #contenedorArticulos .cajaArticulo h3 {
       margin-top: 17px;
       margin-bottom: 16px; }
     #contenedorArticulos .cajaArticulo img {
       width: 100%;
       height: auto;
-      border-radius: 10px; }
+      border-radius: 10px 10px 0px 0px; }
     #contenedorArticulos .cajaArticulo .botonLeer {
       width: 125px;
       height: 35px;
@@ -500,6 +525,7 @@ button.carousel-control-next {
   grid-template-columns: 40% 40%;
   grid-template-rows: auto;
   grid-template-areas: "formulario mapa";
+  margin-top: 40px;
   margin-bottom: 50px;
   justify-content: space-evenly;
   justify-items: center;
@@ -517,6 +543,8 @@ button.carousel-control-next {
     #contenedorContacto #formularioContacto div {
       display: flex;
       justify-content: end; }
+      #contenedorContacto #formularioContacto div .borrarContacto {
+        margin-right: 40px; }
     #contenedorContacto #formularioContacto legend {
       color: white;
       margin-bottom: 16px; }
@@ -543,17 +571,34 @@ button.carousel-control-next {
     width: 100%; }
 
 /* ARTICULO BLOG */
-#heroArticuloBlog {
+.heroArticuloBlog {
   width: 100%;
-  background-image: url("../images/heroarticulo1.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 350px;
   overflow: auto; }
-  #heroArticuloBlog h2 {
+  .heroArticuloBlog.articulo1 {
+    background-image: url("../images/heroarticulo1.png"); }
+  .heroArticuloBlog.articulo2 {
+    background-image: url("../images/heroarticulo2.png"); }
+  .heroArticuloBlog.articulo3 {
+    background-image: url("../images/heroarticulo3.png"); }
+  .heroArticuloBlog.articulo4 {
+    background-image: url("../images/heroarticulo4.png"); }
+  .heroArticuloBlog.articulo5 {
+    background-image: url("../images/heroarticulo5.png"); }
+  .heroArticuloBlog.articulo6 {
+    background-image: url("../images/heroarticulo6.png"); }
+  .heroArticuloBlog.articulo7 {
+    background-image: url("../images/heroarticulo7.png"); }
+  .heroArticuloBlog.articulo8 {
+    background-image: url("../images/heroarticulo8.png"); }
+  .heroArticuloBlog.articulo9 {
+    background-image: url("../images/heroarticulo9.png"); }
+  .heroArticuloBlog h2 {
     color: white; }
-  #heroArticuloBlog p {
+  .heroArticuloBlog p {
     margin: auto;
     text-align: center;
     font-size: 30px;
@@ -565,7 +610,8 @@ button.carousel-control-next {
   display: flex;
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-left: 100px; }
+  margin-left: 100px;
+  align-items: center; }
   #avatarAutor img {
     height: 50px;
     width: 50px;
@@ -583,6 +629,12 @@ button.carousel-control-next {
   margin-bottom: 50px;
   margin-left: 100px;
   margin-right: 100px; }
+  .cuerpoArticulo ul {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-left: 0rem; }
   .cuerpoArticulo li {
     font-size: 15px;
     font-weight: 500;
@@ -604,8 +656,8 @@ button.carousel-control-next {
   h2 {
     font-size: 20px;
     margin-bottom: 30px;
-    margin-left: 0px;
     margin-top: 30px;
+    margin-left: 0px;
     text-align: center; }
   h3 {
     font-size: 16px; }
@@ -621,7 +673,7 @@ button.carousel-control-next {
   legend {
     font-size: 17px; }
   .barraDeNavegacion {
-    height: 110px;
+    height: 60px;
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -633,11 +685,14 @@ button.carousel-control-next {
       flex-direction: column;
       align-items: start;
       height: 100vh;
-      justify-content: flex-start; }
+      justify-content: flex-start;
+      padding-top: 30px; }
   #logo img {
-    padding-left: 30px; }
+    height: 40px;
+    width: 40px;
+    padding-left: 20px; }
   .navbar-light .navbar-toggler {
-    padding-right: 30px; }
+    padding-right: 20px; }
   .botonPrincipal {
     height: 35px;
     width: 159px;
@@ -670,14 +725,15 @@ button.carousel-control-next {
   /*INICIO*/
   #heroInicio {
     width: 100%;
-    height: calc(100vh - 110px);
+    height: calc(100vh - 60px);
     background-image: url("../images/heromobile.png");
     background-position: center;
     background-repeat: no-repeat; }
     #heroInicio #heroContenidoPrincipal {
       width: auto;
       height: 118px;
-      left: 44px; }
+      left: 44px;
+      top: 85px; }
       #heroInicio #heroContenidoPrincipal p {
         font-size: 15px;
         margin-top: 10px;
@@ -816,16 +872,32 @@ button.carousel-control-next {
       width: 100%;
       height: 220px; }
   /*ARTICULO BLOG*/
-  #heroArticuloBlog {
+  .heroArticuloBlog.articulo1 {
     background-image: url("../images/heroarticulo1mobile.png"); }
-    #heroArticuloBlog h2 {
-      margin-left: 20px;
-      text-align: start; }
-    #heroArticuloBlog p {
-      width: auto;
-      text-align: center;
-      font-size: 16px;
-      margin: 110px 50px 100px 50px; }
+  .heroArticuloBlog.articulo2 {
+    background-image: url("../images/heroarticulo2mobile.png"); }
+  .heroArticuloBlog.articulo3 {
+    background-image: url("../images/heroarticulo3mobile.png"); }
+  .heroArticuloBlog.articulo4 {
+    background-image: url("../images/heroarticulo4mobile.png"); }
+  .heroArticuloBlog.articulo5 {
+    background-image: url("../images/heroarticulo5mobile.png"); }
+  .heroArticuloBlog.articulo6 {
+    background-image: url("../images/heroarticulo6mobile.png"); }
+  .heroArticuloBlog.articulo7 {
+    background-image: url("../images/heroarticulo7mobile.png"); }
+  .heroArticuloBlog.articulo8 {
+    background-image: url("../images/heroarticulo8mobile.png"); }
+  .heroArticuloBlog.articulo9 {
+    background-image: url("../images/heroarticulo9mobile.png"); }
+  .heroArticuloBlog h2 {
+    margin-left: 20px;
+    text-align: start; }
+  .heroArticuloBlog p {
+    width: auto;
+    text-align: center;
+    font-size: 16px;
+    margin: 110px 50px 100px 50px; }
   #avatarAutor {
     display: flex;
     margin-top: 30px;
@@ -848,10 +920,10 @@ button.carousel-control-next {
     margin-bottom: 30px; }
     .cuerpoArticulo ul {
       margin-top: 10px;
-      width: 260px;
       margin-left: auto;
       margin-right: auto;
-      display: block; }
+      display: block;
+      padding-left: 0rem; }
     .cuerpoArticulo li {
       font-size: 15px;
       font-weight: 500;
@@ -874,7 +946,7 @@ button.carousel-control-next {
     font-size: 20px;
     margin-bottom: 30px;
     margin-left: 0px;
-    margin-top: 30px;
+    margin-top: 55px;
     text-align: center; }
   h3 {
     font-size: 16px; }
@@ -891,7 +963,7 @@ button.carousel-control-next {
     font-size: 17px;
     margin-bottom: 20px; }
   .barraDeNavegacion {
-    height: 110px;
+    height: auto;
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -903,7 +975,8 @@ button.carousel-control-next {
       flex-direction: column;
       align-items: start;
       height: 100vh;
-      justify-content: flex-start; }
+      justify-content: flex-start;
+      padding-top: 30px; }
   #logo img {
     padding-left: 30px; }
   .navbar-light .navbar-toggler {
@@ -939,8 +1012,7 @@ button.carousel-control-next {
   /*INICIO*/
   #heroInicio {
     width: 100%;
-    height: calc(100vh - 110px);
-    background-image: url("../images/heromobile.png");
+    background-image: url("../images/herotablet.png");
     background-position: center;
     background-repeat: no-repeat; }
     #heroInicio #heroContenidoPrincipal {
@@ -970,7 +1042,7 @@ button.carousel-control-next {
     height: 160px;
     margin-bottom: 30px; }
   .carousel-item {
-    transition: transform .6s ease-in; }
+    transition: transform .9s ease-in; }
     .carousel-item .carruselPacientes {
       width: 300px;
       height: 550px;
@@ -1086,12 +1158,30 @@ button.carousel-control-next {
       width: 100%;
       height: 220px; }
   /* ARTICULO BLOG */
-  #heroArticuloBlog {
+  .heroArticuloBlog {
     background-image: url("../images/heroarticulo1mobile.png"); }
-    #heroArticuloBlog h2 {
+    .heroArticuloBlog.articulo1 {
+      background-image: url("../images/heroarticulo1.png"); }
+    .heroArticuloBlog.articulo2 {
+      background-image: url("../images/heroarticulo2.png"); }
+    .heroArticuloBlog.articulo3 {
+      background-image: url("../images/heroarticulo3.png"); }
+    .heroArticuloBlog.articulo4 {
+      background-image: url("../images/heroarticulo4.png"); }
+    .heroArticuloBlog.articulo5 {
+      background-image: url("../images/heroarticulo5.png"); }
+    .heroArticuloBlog.articulo6 {
+      background-image: url("../images/heroarticulo6.png"); }
+    .heroArticuloBlog.articulo7 {
+      background-image: url("../images/heroarticulo7.png"); }
+    .heroArticuloBlog.articulo8 {
+      background-image: url("../images/heroarticulo8.png"); }
+    .heroArticuloBlog.articulo9 {
+      background-image: url("../images/heroarticulo9.png"); }
+    .heroArticuloBlog h2 {
       margin-left: 20px;
       text-align: start; }
-    #heroArticuloBlog p {
+    .heroArticuloBlog p {
       width: auto;
       text-align: center;
       font-size: 16px;
@@ -1118,10 +1208,10 @@ button.carousel-control-next {
     margin-bottom: 30px; }
     .cuerpoArticulo ul {
       margin-top: 10px;
-      width: 260px;
       margin-left: auto;
       margin-right: auto;
-      display: block; }
+      display: block;
+      padding-left: 0rem; }
     .cuerpoArticulo li {
       font-size: 15px;
       font-weight: 500;
@@ -1189,8 +1279,8 @@ button.carousel-control-next {
   /*INICIO*/
   #heroInicio {
     width: 100%;
-    height: calc(100vh - 110px);
-    background-image: url("../images/heroinicio.png");
+    height: calc(100vh - 60px);
+    background-image: url("../images/herotablet.png");
     background-position: center;
     background-repeat: no-repeat; }
     #heroInicio #heroContenidoPrincipal {
@@ -1231,7 +1321,7 @@ button.carousel-control-next {
     margin-left: 20px;
     margin-right: 20px; }
   .carousel-item {
-    transition: transform .6s ease-in; }
+    transition: transform .9s ease-in; }
     .carousel-item .carruselPacientes {
       width: 818px;
       height: 298px;
@@ -1345,12 +1435,30 @@ button.carousel-control-next {
       width: 100%;
       height: 220px; }
   /* ARTICULO BLOG */
-  #heroArticuloBlog {
+  .heroArticuloBlog {
     background-image: url("../images/heroarticulo1mobile.png"); }
-    #heroArticuloBlog h2 {
+    .heroArticuloBlog.articulo1 {
+      background-image: url("../images/heroarticulo1.png"); }
+    .heroArticuloBlog.articulo2 {
+      background-image: url("../images/heroarticulo2.png"); }
+    .heroArticuloBlog.articulo3 {
+      background-image: url("../images/heroarticulo3.png"); }
+    .heroArticuloBlog.articulo4 {
+      background-image: url("../images/heroarticulo4.png"); }
+    .heroArticuloBlog.articulo5 {
+      background-image: url("../images/heroarticulo5.png"); }
+    .heroArticuloBlog.articulo6 {
+      background-image: url("../images/heroarticulo6.png"); }
+    .heroArticuloBlog.articulo7 {
+      background-image: url("../images/heroarticulo7.png"); }
+    .heroArticuloBlog.articulo8 {
+      background-image: url("../images/heroarticulo8.png"); }
+    .heroArticuloBlog.articulo9 {
+      background-image: url("../images/heroarticulo9.png"); }
+    .heroArticuloBlog h2 {
       margin-left: 20px;
       text-align: start; }
-    #heroArticuloBlog p {
+    .heroArticuloBlog p {
       width: auto;
       text-align: center;
       font-size: 16px;
@@ -1377,10 +1485,10 @@ button.carousel-control-next {
     margin-bottom: 30px; }
     .cuerpoArticulo ul {
       margin-top: 10px;
-      width: 260px;
       margin-left: auto;
       margin-right: auto;
-      display: block; }
+      display: block;
+      padding-left: 0rem; }
     .cuerpoArticulo li {
       font-size: 15px;
       font-weight: 500;
@@ -1403,7 +1511,7 @@ button.carousel-control-next {
 /*Ajuste carrusel pacientes en pequeña Laptop*/
 @media screen and (max-width: 845px) {
   .carousel-item {
-    transition: transform .6s ease-in; }
+    transition: transform .9s ease-in; }
     .carousel-item .carruselPacientes {
       width: 300px;
       height: 560px;
